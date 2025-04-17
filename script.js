@@ -10,7 +10,14 @@ for (let i = 0; i <16; i++){
   }
 };
 
-const squares = document.querySelectorAll('.square');
+const squares = document.querySelector('.square');
+
+document.addEventListener('mouseover', function(event){
+    if(event.target.classList.contains('square')){
+      console.log('hover works');
+    }
+  }
+);
 
 /*for (let j = 0; j < squares.length; j++){
   squares[j].style.backgroundColor = 'green';
