@@ -3,12 +3,18 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
+body{
+display:flex;
+justify-content: center;
+margin-top: 70px;
+}
 
 .container{
 display: flex;
 /* adjust width depending on square size x16 */
 width: 560px;
-flex-wrap: wrap;
+align-items: center;
+flex-wrap:wrap;
 }
 
 .square{
