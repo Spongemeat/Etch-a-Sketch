@@ -4,8 +4,15 @@ padding:0;
 box-sizing:border-box;
 }
 
+.container{
+display: flex;
+width: 140px;
+flex-wrap: wrap;
+}
+
 .square{
-border-style:dashed;
-width: 20px;
-height: 20px;
+/*border-style:dashed;*/
+width: 35px;
+height: 35px;
+background-color:grey;
 }
