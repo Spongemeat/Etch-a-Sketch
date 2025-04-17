@@ -6,7 +6,8 @@ box-sizing:border-box;
 
 .container{
 display: flex;
-width: 140px;
+/* adjust width depending on square size x16 */
+width: 560px;
 flex-wrap: wrap;
 }
 
