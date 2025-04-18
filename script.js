@@ -36,6 +36,17 @@ gridButton.addEventListener('click', () => {
     alert('Please enter a number less than 100');
     return 1;
   }
+  clearGrid();
   console.log(`${gridSize}`);
 });
 
+function clearGrid(){
+  while(squareContainer.hasChildNodes()){
+  squareContainer.removeChild(squareContainer.firstChild);
+  }
+  return;
+};
+
+function populateNewGrid(){
+  return;
+};
