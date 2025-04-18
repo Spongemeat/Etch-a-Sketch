@@ -5,7 +5,7 @@ box-sizing:border-box;
 }
 
 body{
-margin-top: 70px;
+margin-top: 20px;
 display:flex;
 flex-direction:column;
 align-items: center;
@@ -23,14 +23,15 @@ margin-bottom: 15px;
 .gridContainer{
 display: flex;
 /* adjust width depending on square size x16 */
-width: 560px;
+width: 960px;
+height: 960px;
 flex-wrap:wrap;
 }
 
 .square{
 /*border-style:dashed;*/
-width: 35px;
-height: 35px;
+width: 60px;
+height: 60px;
 background-color:rgb(255, 255, 255);
 border-style: dotted;
 border-width: 1px;
