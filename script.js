@@ -49,13 +49,18 @@ function clearGrid(){
 };
 
 function populateNewGrid(number){
+  //get square dimensions 960/number
+  let newSquareDimensions = 960/number;
+
   for (let i = 0; i < number; i++){
     for (let j = 0; j < number; j++){
-    let squareSetUp = document.createElement('div');
-    squareSetUp.classList.add('square');
-    squareContainer.appendChild(squareSetUp);
-  }
-  }
-  
+      let squareSetUp = document.createElement('div');
+      squareSetUp.classList.add('square');
+      squareContainer.appendChild(squareSetUp);
+      squareSetUp.style.width = `${newSquareDimensions}px`;
+      squareSetUp.style.height = `${newSquareDimensions}px`;
+    }
+  } 
+  console.log(`sum is ${newSquareDimensions}`);
   return;
 };

@@ -29,7 +29,7 @@ flex-wrap:wrap;
 }
 
 .square{
-/*border-style:dashed;*/
+border-style:dashed;
 width: 60px;
 height: 60px;
 background-color:rgb(255, 255, 255);
