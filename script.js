@@ -1,4 +1,4 @@
-const squareContainer = document.querySelector('.container');
+const squareContainer = document.querySelector('.gridContainer');
 
 // Change to alter grid dimensions, ex 16x16 grid //
 let gridSize = 16;
