@@ -22,7 +22,6 @@ margin-bottom: 15px;
 
 .gridContainer{
 display: flex;
-/* adjust width depending on square size x16 */
 width: 960px;
 height: 960px;
 flex-wrap:wrap;

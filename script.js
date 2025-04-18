@@ -2,7 +2,7 @@ const squareContainer = document.querySelector('.gridContainer');
 const gridButton = document.querySelector('.gridBtn');
 
 
-// Change to alter grid dimensions, ex 16x16 grid //
+// ets up grid on load
 let gridSize = 16;
 for (let i = 0; i <16; i++){
   for (let j = 0; j < 16; j++){
@@ -30,6 +30,7 @@ document.addEventListener('click', function(event){
   }
 );
 
+//button click trigger to create new grid when user input < 100
 gridButton.addEventListener('click', () => {
   let gridSize = prompt('What is the size of the grid?'); 
     if (gridSize > 100 || isNaN(gridSize) ){
@@ -41,6 +42,7 @@ gridButton.addEventListener('click', () => {
   console.log(`${gridSize}`);
 });
 
+//clears existing grid
 function clearGrid(){
   while(squareContainer.hasChildNodes()){
   squareContainer.removeChild(squareContainer.firstChild);
@@ -48,6 +50,7 @@ function clearGrid(){
   return;
 };
 
+//creates new grid 
 function populateNewGrid(number){
   //get square dimensions 960/number
   let newSquareDimensions = 960/number;
