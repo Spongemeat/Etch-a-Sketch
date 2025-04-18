@@ -31,6 +31,11 @@ document.addEventListener('click', function(event){
 );
 
 gridButton.addEventListener('click', () => {
-  gridButton.style.color = 'red';
+  let gridSize = prompt('What is the size of the grid?'); 
+    if (gridSize > 100 || isNaN(gridSize) ){
+    alert('Please enter a number less than 100');
+    return 1;
+  }
+  console.log(`${gridSize}`);
 });
 
