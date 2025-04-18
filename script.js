@@ -1,4 +1,6 @@
 const squareContainer = document.querySelector('.gridContainer');
+const gridButton = document.querySelector('.gridBtn');
+
 
 // Change to alter grid dimensions, ex 16x16 grid //
 let gridSize = 16;
@@ -28,4 +30,7 @@ document.addEventListener('click', function(event){
   }
 );
 
+gridButton.addEventListener('click', () => {
+  gridButton.style.color = 'red';
+});
 
