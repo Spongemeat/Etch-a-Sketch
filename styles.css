@@ -31,8 +31,8 @@ flex-wrap:wrap;
 border-style:dashed;
 width: 60px;
 height: 60px;
-background-color:rgb(255, 255, 255);
 border-style: dotted;
 border-width: 1px;
 border-color: rgb(173, 173, 173);
+opacity: 0.2;
 }

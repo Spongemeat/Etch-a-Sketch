@@ -13,11 +13,12 @@ for (let i = 0; i <16; i++){
 };
 
 const squares = document.querySelector('.square');
-
+const header = document.querySelector('h1');
 //if mouse enters element, square turns grey
 document.addEventListener('mouseover', function(event){
     if(event.target.classList.contains('square')){
-      event.target.style.backgroundColor='grey';
+      event.target.style.backgroundColor='black';
+      event.target.style.opacity += 0.2;
     }
   }
 );
@@ -25,7 +26,8 @@ document.addEventListener('mouseover', function(event){
 //if mouse clicks square, square turns white
 document.addEventListener('click', function(event){
     if(event.target.classList.contains('square')){
-      event.target.style.backgroundColor='white';
+        event.target.style.opacity.stepUp(0.2);
+      //event.target.style.backgroundColor='white';
     }
   }
 );
